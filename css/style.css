@@ -3,110 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
 
-.intro {
-  width: 100%;
-  height: 913px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #0a6a5c;
-  z-index: 10;
-  transition: all 1s ease-in-out;
-  opacity: 100%;
-}
-
-.title {
-  display: flex;
-  width: 100%;
-  height: 85px;
-  margin-top: 370px;
-  margin-left: 0%;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 400;
-  font-size: 80px;
-  text-align: center;
-  line-height: 1em;
-  color: white;
-  overflow: hidden;
-  perspective: 1100px;
-}
-
-.road {
-  margin-left: 48%;
-  opacity: 0%;
-  animation-name: show, move;
-  animation-duration: 3s, 1.5s;
-  animation-delay: 0s, 2s;
-  animation-timing-function: ease-in-out, ease-in-out;
-  animation-fill-mode: forwards, forwards;
-  /* display: inline-block; */
-}
-
-.flip {
-  display: flex;
-  transform-style: preserve-3d;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-}
-
-.lost,
-.name {
-  color: rgba(255, 255, 255, 0.3);
-  backface-visibility: hidden;
-  opacity: 0;
-  animation-name: show2;
-  animation-duration: 2s;
-  animation-delay: 3.2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.name {
-  margin-left: -29.5%;
-  transform: rotateX(180deg);
-}
-
-.title:hover .flip {
-  transform: rotateX(-180deg);
-}
-
-@keyframes show {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes move {
-  from {
-    margin-left: 48%;
-  }
-  to {
-    margin-left: 32%;
-  }
-}
-
-@keyframes show2 {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
 .main {
-  width: 100%;
-  height: 913px;
+  width: 113%;
+  height: 113%;
   display: flex;
   justify-content: center;
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: #0a6a5c;
-  opacity: 0%;
+  opacity: 100%;
   z-index: 1;
   transition: all 2s ease-in-out;
 }
@@ -115,12 +21,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
 }
 
 .main-img {
-  margin-top: 50px;
+  margin-top: -110px;
   width: 750px;
   height: 750px;
+  transform: scale(1.2);
 }
 
 .move-container {
@@ -135,7 +43,7 @@
 }
 
 .explain {
-  opacity: 0%;
+  display: none;
   position: relative;
   top: -230px;
   left: 0px;
@@ -152,9 +60,9 @@
   transition: all 0.4s;
 }
 
-.main-img:hover .explain {
+/* .main-img:hover .explain {
   opacity: 100%;
-}
+} */
 
 .t-con {
   font-size: 14px;
@@ -432,26 +340,28 @@ p {
 }
 
 .mini-title {
-  margin-top: 30px;
+  margin-top: 105px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: space-between;
+  transform: scale(1.2);
 }
 
 .ins {
-  display: inline-block;
-  position: relative;
-  top: 0px;
-  left: 2px;
+  position: absolute;
+  top: 575px;
+  right: 102px;
   cursor: pointer;
 }
 
-.ins span {
+a span {
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 26px;
 }
 
 a {
@@ -468,8 +378,8 @@ a:hover {
 
 .poem {
   position: absolute;
-  top: 46px;
-  right: 15px;
+  top: 40px;
+  right: 35px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
   font-size: 16px;
@@ -477,6 +387,7 @@ a:hover {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transform: scale(1.2);
   transition: all 0.2s;
 }
 
@@ -489,215 +400,26 @@ a:hover {
 }
 
 .star {
-  width: 100%;
-  height: 913px;
+  width: 113%;
+  height: 113%;
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0px;
   left: 0px;
+  opacity: 100%;
+  transition: all 2s ease-in-out;
   background-color: #0a6a5c;
   z-index: -5;
-  opacity: 0%;
   transition: 0.8s ease-in-out;
   font-family: "Noto Serif KR", serif;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.5em;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
 }
 
-.star-title {
-  position: absolute;
-  top: 142px;
-  left: 465px;
-  animation-delay: 0.5s;
+.p-text {
+  margin-top: 620px;
+  margin-left: 20px;
 }
-
-.t-up {
-  transform: translate(-26px, -43px);
-}
-
-.text {
-  opacity: 0%;
-  animation-name: twinkle;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
-}
-
-.t1 {
-  position: absolute;
-  top: 141px;
-  left: 783px;
-  animation-delay: 3.5s;
-}
-
-.t2 {
-  position: absolute;
-  top: 260px;
-  left: 1083px;
-  animation-delay: 5.5s;
-}
-
-.t3 {
-  position: absolute;
-  top: 330px;
-  left: 830px;
-  animation-delay: 5.5s;
-}
-
-.t4 {
-  position: absolute;
-  top: 441px;
-  left: 680px;
-  animation-delay: 7.5s;
-}
-
-.t5 {
-  position: absolute;
-  top: 562px;
-  left: 1021px;
-  animation-delay: 9.5s;
-}
-
-.t6 {
-  position: absolute;
-  top: 689px;
-  left: 743px;
-  animation-delay: 11.5s;
-}
-
-.t7 {
-  position: absolute;
-  top: 786px;
-  left: 961px;
-  animation-delay: 13s;
-}
-
-.star-group {
-  position: absolute;
-  top: 19px;
-  left: 485px;
-  width: 670.68px;
-  height: 870.19px;
-  transform: scale(0.695);
-}
-
-.star-stroke {
-  fill: rgba(255, 255, 255, 0.5);
-  opacity: 0%;
-}
-
-.star-ani {
-  animation-name: twinkle;
-  animation-duration: 0.7s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
-}
-
-.st1 {
-  animation-delay: 2s;
-}
-
-.st2 {
-  animation-delay: 4s;
-}
-
-.st3 {
-  animation-delay: 6s;
-}
-
-.st4 {
-  animation-delay: 8s;
-}
-
-.st5 {
-  animation-delay: 10s;
-}
-
-@keyframes twinkle {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-.close-page {
-  opacity: 0%;
-  position: absolute;
-  top: 45%;
-  right: 2%;
-  width: 70px;
-  height: 70px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 1);
-  text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 100;
-  line-height: 1.8em;
-  font-size: 36px;
-  animation-name: twinkle;
-  animation-duration: 1s;
-  animation-delay: 13s;
-  animation-fill-mode: forwards;
-}
-
-/* .main-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 913px;
-  background-color: black;
-}
-
-.bg-img-container {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 913px;
-  height: 913px;
-  overflow: hidden;
-  cursor: grab;
-  transition: all 0.7s ease-in-out;
-  transform-origin: center;
-} */
-
-/* .bg-img-container:hover {
-  transform: translate(40%, 0%);
-} */
-
-/* .bg-img {
-  width: 100%;
-  height: 100%;
-}
-
-.text-box {
-  position: absolute;
-  top: 18%;
-  right: 8%;
-  width: 500px;
-  height: 700px;
-  font-family: "Noto Serif KR", serif;
-  color: white;
-  transition: all 0.5s ease-in-out;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 28px;
-}
-
-p {
-  font-weight: 300;
-  line-height: 1.7em;
-  word-break: break-all;
-} */
