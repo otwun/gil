@@ -339,10 +339,10 @@ p {
 }
 
 .mini-title {
-  margin-top: 105px;
+  margin-top: 110px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 26px;
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: space-between;
@@ -351,7 +351,7 @@ p {
 
 .ins {
   margin-top: -200px;
-  margin-bottom: 100px;
+  margin-bottom: 104px;
   cursor: pointer;
 }
 
@@ -359,11 +359,11 @@ a span {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 26px;
+  font-size: 30px;
 }
 
 a {
-  margin-right: -780px;
+  margin-right: -776px;
   text-decoration: none;
 }
 
@@ -377,11 +377,11 @@ a:hover {
 
 .poem {
   position: absolute;
-  top: 40px;
-  right: 35px;
+  top: 45px;
+  right: 40px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 26px;
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
@@ -395,7 +395,8 @@ a:hover {
 }
 
 .arrow {
-  margin-left: 4px;
+  margin-left: 8px;
+  margin-top: 1px;
 }
 
 .star {
@@ -412,13 +413,13 @@ a:hover {
   z-index: -5;
   transition: 0.8s ease-in-out;
   font-family: "Noto Serif KR", serif;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 1.5em;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
 }
 
 .p-text {
-  margin-top: 620px;
-  margin-left: 20px;
+  margin-top: 450px;
+  margin-left: 64px;
 }
