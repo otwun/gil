@@ -350,7 +350,7 @@ p {
 }
 
 .ins {
-  margin-top: -200px;
+  margin-top: -180px;
   margin-bottom: 104px;
   cursor: pointer;
 }
@@ -420,6 +420,6 @@ a:hover {
 }
 
 .p-text {
-  margin-top: 450px;
+  margin-top: 400px;
   margin-left: 64px;
 }
